@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Campus Coin
 
-# Run and deploy your AI Studio app
+Campus Coin is a student-focused budgeting and spending management platform for tracking expenses, setting budgets, analyzing trends, and improving savings habits.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/b1780aa9-d9b1-4197-86b7-ead3efa6b195
+- Personal budgeting and expense tracking
+- Category management and recurring transactions
+- CSV import for transaction history
+- Reports, insights, and saving tips
+- Student and admin dashboards
+- Notifications, bookmarks, and profile settings
+
+## Tech Stack
+
+- React + Vite
+- TypeScript
+- Express + Node.js
+- MongoDB with Mongoose
+- Bootstrap and custom styling
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+Prerequisites:
+- Node.js
+- npm
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   npm install
+2. Create your environment file if needed and configure MongoDB and auth settings.
+3. Start the app:
+   npm run dev
+
+## Production Build
+
+npm run build
+
+## Lint / Type Check
+
+npm run lint
+
