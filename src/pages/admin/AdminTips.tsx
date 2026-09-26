@@ -103,7 +103,7 @@ export const AdminTips: React.FC = () => {
 
         <button
           onClick={handleOpenCreate}
-          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs"
+          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs"
         >
           <Plus className="w-4 h-4" />
           <span>New Saving Tip</span>
@@ -188,7 +188,7 @@ export const AdminTips: React.FC = () => {
               id="tipActive"
               checked={formData.isActive}
               onChange={(e) => setFormData({ ...formData, isActive: e.target.checked })}
-              className="w-4 h-4 rounded text-indigo-600"
+              className="w-4 h-4 rounded text-brand-600"
             />
             <label htmlFor="tipActive" className="text-xs font-semibold text-slate-700 dark:text-slate-300">
               Active / Visible to Students
@@ -205,7 +205,7 @@ export const AdminTips: React.FC = () => {
             </button>
             <button
               type="submit"
-              className="px-5 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white"
+              className="px-5 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white"
             >
               Save Tip
             </button>

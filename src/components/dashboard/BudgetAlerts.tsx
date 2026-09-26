@@ -84,7 +84,7 @@ export const BudgetAlerts: React.FC<BudgetAlertsProps> = ({ alerts, currency = '
       <div className="pt-1 text-right">
         <Link
           to="/budgets"
-          className="inline-flex items-center gap-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+          className="inline-flex items-center gap-1 text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline"
         >
           <span>Manage all budgets</span>
           <ArrowRight className="w-3.5 h-3.5" />

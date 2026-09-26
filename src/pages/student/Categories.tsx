@@ -140,7 +140,7 @@ export const Categories: React.FC = () => {
 
         <button
           onClick={handleOpenCreate}
-          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 transition-all"
+          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/20 transition-all"
         >
           <Plus className="w-4 h-4" />
           <span>New Custom Category</span>
@@ -148,8 +148,8 @@ export const Categories: React.FC = () => {
       </div>
 
       {/* AI Suggestion Sandbox preview widget */}
-      <div className="p-5 rounded-3xl bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-950/40 dark:via-purple-950/20 dark:to-slate-900 border border-indigo-100 dark:border-indigo-900/40">
-        <div className="flex items-center gap-2 text-indigo-700 dark:text-indigo-300 text-xs font-bold mb-2">
+      <div className="p-5 rounded-3xl bg-gradient-to-r from-brand-50 via-purple-50 to-pink-50 dark:from-brand-950/40 dark:via-purple-950/20 dark:to-slate-900 border border-brand-100 dark:border-brand-900/40">
+        <div className="flex items-center gap-2 text-brand-700 dark:text-brand-300 text-xs font-bold mb-2">
           <Sparkles className="w-4 h-4" />
           <span>Gemini AI Category Sandbox</span>
         </div>
@@ -162,12 +162,12 @@ export const Categories: React.FC = () => {
             placeholder="e.g. 3 printed copies of biology lab report or midnight noodle bowl"
             value={testDescription}
             onChange={(e) => setTestDescription(e.target.value)}
-            className="flex-1 px-3.5 py-2 rounded-xl border border-indigo-200 dark:border-indigo-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+            className="flex-1 px-3.5 py-2 rounded-xl border border-brand-200 dark:border-brand-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
           />
           <button
             type="submit"
             disabled={testingAI}
-            className="px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs disabled:opacity-50 inline-flex items-center gap-1.5 shrink-0"
+            className="px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs disabled:opacity-50 inline-flex items-center gap-1.5 shrink-0"
           >
             {testingAI && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
             <span>Classify</span>
@@ -175,9 +175,9 @@ export const Categories: React.FC = () => {
         </form>
 
         {testResult && (
-          <div className="mt-3 p-3 rounded-2xl bg-white dark:bg-slate-900 border border-indigo-100 dark:border-indigo-900/50 flex items-center justify-between text-xs">
+          <div className="mt-3 p-3 rounded-2xl bg-white dark:bg-slate-900 border border-brand-100 dark:border-brand-900/50 flex items-center justify-between text-xs">
             <span>
-              🎯 Predicted Category: <strong className="text-indigo-600 dark:text-indigo-400">{testResult.category}</strong>
+              Predicted Category: <strong className="text-brand-600 dark:text-brand-400">{testResult.category}</strong>
             </span>
             <span className="text-[10px] text-slate-500">
               Confidence Score: {Math.round(testResult.confidence * 100)}%
@@ -241,7 +241,7 @@ export const Categories: React.FC = () => {
                 <div className="flex items-center gap-1">
                   <button
                     onClick={() => handleOpenEdit(c)}
-                    className="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 transition-colors"
+                    className="p-1.5 rounded-lg text-slate-400 hover:text-brand-600 transition-colors"
                   >
                     <Edit2 className="w-3.5 h-3.5" />
                   </button>
@@ -281,7 +281,7 @@ export const Categories: React.FC = () => {
               placeholder="e.g. Gym Membership, Laundry, Hackathons"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
 
@@ -292,7 +292,7 @@ export const Categories: React.FC = () => {
             <select
               value={formData.type}
               onChange={(e) => setFormData({ ...formData, type: e.target.value as 'expense' | 'income' })}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
             >
               <option value="expense">Expense</option>
               <option value="income">Income</option>
@@ -327,7 +327,7 @@ export const Categories: React.FC = () => {
             <button
               type="submit"
               disabled={saving}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs disabled:opacity-50 transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs disabled:opacity-50 transition-colors"
             >
               {saving && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
               <span>{modalMode === 'create' ? 'Create' : 'Save'}</span>

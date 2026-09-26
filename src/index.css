@@ -1,1 +1,99 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-50: #E6F7F3;
+  --color-brand-100: #C9EFE7;
+  --color-brand-200: #9FE1D5;
+  --color-brand-300: #6DD3C4;
+  --color-brand-400: #4DD0C3;
+  --color-brand-500: #3AACA0;
+  --color-brand-600: #38968D;
+  --color-brand-700: #2C7770;
+  --color-brand-800: #1B5D50;
+  --color-brand-900: #143F37;
+  --color-brand-950: #182B28;
+
+  --color-gold-50: #FFF9EC;
+  --color-gold-100: #FFEFC7;
+  --color-gold-200: #FFDD89;
+  --color-gold-300: #FFC94D;
+  --color-gold-400: #F7B733;
+  --color-gold-500: #E89F1F;
+  --color-gold-600: #C27E14;
+  --color-gold-700: #965F12;
+  --color-gold-800: #784C16;
+  --color-gold-900: #653F18;
+
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+}
+
+/* ---------- Hero coin-motif background ---------- */
+.cc-hero-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cc-hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: -10%;
+  background-image: radial-gradient(circle at 1px 1px, rgba(58, 172, 160, 0.16) 1px, transparent 0);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black 40%, transparent 90%);
+}
+
+.dark .cc-hero-bg::before {
+  background-image: radial-gradient(circle at 1px 1px, rgba(109, 211, 196, 0.14) 1px, transparent 0);
+}
+
+.cc-hero-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.35;
+}
+
+.cc-coin {
+  position: absolute;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35);
+  animation: cc-float 7s ease-in-out infinite;
+}
+
+@keyframes cc-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(6deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cc-coin { animation: none; }
+}
+
+/* ---------- Carousel ---------- */
+.cc-carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cc-carousel-viewport {
+  overflow: hidden;
+}
+.cc-carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(148, 163, 184, 0.4);
+  transition: all 0.25s ease;
+}
+.cc-carousel-dot.active {
+  width: 22px;
+  background: var(--color-brand-500);
+}

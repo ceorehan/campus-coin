@@ -7,7 +7,7 @@ export const Sitemap: React.FC = () => {
     {
       title: 'Public Pages (SRS Public Scope)',
       icon: Globe,
-      color: 'text-indigo-600 dark:text-indigo-400',
+      color: 'text-brand-600 dark:text-brand-400',
       links: [
         { path: '/', label: 'Home Page', desc: 'Hero introduction, demo credentials overview, core pillars' },
         { path: '/features', label: 'Features Specification', desc: 'Detailed breakdown of student budgeting tools' },
@@ -96,7 +96,7 @@ export const Sitemap: React.FC = () => {
                     className="p-3 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800/60 border border-slate-100 dark:border-slate-800/50 transition-colors group flex items-start justify-between"
                   >
                     <div>
-                      <span className="text-xs font-bold text-slate-800 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors flex items-center gap-1.5">
+                      <span className="text-xs font-bold text-slate-800 dark:text-slate-200 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors flex items-center gap-1.5">
                         <span>{link.label}</span>
                         <code className="text-[10px] font-mono font-normal text-slate-400">
                           {link.path}
@@ -106,7 +106,7 @@ export const Sitemap: React.FC = () => {
                         {link.desc}
                       </p>
                     </div>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-300 group-hover:text-indigo-500 shrink-0 mt-0.5 ml-2 transition-colors" />
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-300 group-hover:text-brand-500 shrink-0 mt-0.5 ml-2 transition-colors" />
                   </Link>
                 ))}
               </div>

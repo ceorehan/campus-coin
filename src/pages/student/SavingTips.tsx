@@ -99,7 +99,7 @@ export const SavingTips: React.FC = () => {
               >
                 <div>
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300">
+                    <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-brand-50 dark:bg-brand-950/60 text-brand-700 dark:text-brand-300">
                       {t.category}
                     </span>
                     <button
@@ -108,7 +108,7 @@ export const SavingTips: React.FC = () => {
                       className={`p-1.5 rounded-lg transition-colors ${
                         isBookmarked
                           ? 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50'
-                          : 'text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 dark:hover:bg-slate-800'
+                          : 'text-slate-400 hover:text-brand-600 hover:bg-brand-50 dark:hover:bg-slate-800'
                       }`}
                       title={isBookmarked ? 'Bookmarked' : 'Save to bookmarks'}
                     >

@@ -50,10 +50,10 @@ export const HowItWorks: React.FC = () => {
               className="relative p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between"
             >
               <div>
-                <span className="text-3xl font-black text-indigo-100 dark:text-indigo-950/80 block mb-2">
+                <span className="text-3xl font-black text-brand-100 dark:text-brand-950/80 block mb-2">
                   {s.step}
                 </span>
-                <div className="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-3">
+                <div className="w-10 h-10 rounded-xl bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 flex items-center justify-center mb-3">
                   <Icon className="w-5 h-5" />
                 </div>
                 <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-2">{s.title}</h3>
@@ -64,8 +64,8 @@ export const HowItWorks: React.FC = () => {
         })}
       </div>
 
-      <div className="p-8 rounded-3xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/40 text-center space-y-4 max-w-2xl mx-auto">
-        <Award className="w-8 h-8 text-indigo-600 dark:text-indigo-400 mx-auto" />
+      <div className="p-8 rounded-3xl bg-brand-50 dark:bg-brand-950/40 border border-brand-100 dark:border-brand-900/40 text-center space-y-4 max-w-2xl mx-auto">
+        <Award className="w-8 h-8 text-brand-600 dark:text-brand-400 mx-auto" />
         <h3 className="text-base font-bold text-slate-900 dark:text-white">
           Ready to take control of your student budget?
         </h3>
@@ -74,7 +74,7 @@ export const HowItWorks: React.FC = () => {
         </p>
         <Link
           to="/register"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs transition-colors"
         >
           <span>Create Free Account</span>
           <ArrowRight className="w-4 h-4" />

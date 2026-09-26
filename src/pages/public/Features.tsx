@@ -18,7 +18,7 @@ export const Features: React.FC = () => {
       icon: Coins,
       title: 'Monthly Allowance Baseline',
       desc: 'Set your recurring allowance or campus paycheck baseline. Campus Coin monitors whether your current run rate will leave you stranded before the end of the month.',
-      color: 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400',
+      color: 'bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400',
     },
     {
       icon: PieChart,
@@ -54,7 +54,7 @@ export const Features: React.FC = () => {
       icon: Compass,
       title: 'Campus Saving Tips & Bookmarks',
       desc: 'Curated financial hacks for university life—from splitting streaming plans to taking advantage of student ID discounts. Bookmark tips for quick access anytime.',
-      color: 'bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400',
+      color: 'bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400',
     },
     {
       icon: Shield,
@@ -98,7 +98,7 @@ export const Features: React.FC = () => {
       <div className="text-center pt-8">
         <Link
           to="/register"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/25 transition-all"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/25 transition-all"
         >
           <span>Get Started Now</span>
           <ArrowRight className="w-4 h-4" />

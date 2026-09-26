@@ -21,9 +21,9 @@ export const DashboardStats: React.FC<StatCardsProps> = ({ data, currency = 'USD
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {/* 1. Net Balance Card */}
-      <div className="relative overflow-hidden p-5 rounded-3xl bg-gradient-to-br from-indigo-600 to-violet-700 text-white shadow-xl shadow-indigo-500/10">
+      <div className="relative overflow-hidden p-5 rounded-3xl bg-gradient-to-br from-brand-600 to-violet-700 text-white shadow-xl shadow-brand-500/10">
         <div className="flex items-center justify-between">
-          <span className="text-xs font-semibold text-indigo-100 uppercase tracking-wider">
+          <span className="text-xs font-semibold text-brand-100 uppercase tracking-wider">
             Total Balance
           </span>
           <div className="w-9 h-9 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white">
@@ -34,7 +34,7 @@ export const DashboardStats: React.FC<StatCardsProps> = ({ data, currency = 'USD
           <div className="text-2xl lg:text-3xl font-black tracking-tight">
             {formatCurrency(data.totalBalance, currency)}
           </div>
-          <div className="flex items-center gap-1.5 mt-2 text-xs text-indigo-100">
+          <div className="flex items-center gap-1.5 mt-2 text-xs text-brand-100">
             <span className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-white/15 text-[11px] font-semibold">
               This Month: {formatCurrency(data.monthlyBalance, currency)}
             </span>
@@ -90,7 +90,7 @@ export const DashboardStats: React.FC<StatCardsProps> = ({ data, currency = 'USD
           <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
             Savings Progress
           </span>
-          <div className="w-9 h-9 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+          <div className="w-9 h-9 rounded-xl bg-brand-50 dark:bg-brand-950/50 text-brand-600 dark:text-brand-400 flex items-center justify-center">
             <Target className="w-4 h-4" />
           </div>
         </div>
@@ -106,7 +106,7 @@ export const DashboardStats: React.FC<StatCardsProps> = ({ data, currency = 'USD
           {/* Progress bar */}
           <div className="mt-3 w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
             <div
-              className="bg-indigo-600 dark:bg-indigo-500 h-full rounded-full transition-all duration-500"
+              className="bg-brand-600 dark:bg-brand-500 h-full rounded-full transition-all duration-500"
               style={{ width: `${Math.min(100, Math.max(0, data.savingsGoalProgress))}%` }}
             />
           </div>

@@ -46,7 +46,7 @@ export const TransactionFilter: React.FC<TransactionFilterProps> = ({
           placeholder="Search by description (e.g. coffee, textbooks, allowance)..."
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="w-full pl-9 pr-4 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+          className="w-full pl-9 pr-4 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 text-xs focus:ring-2 focus:ring-brand-500 outline-none"
         />
       </div>
 
@@ -57,7 +57,7 @@ export const TransactionFilter: React.FC<TransactionFilterProps> = ({
           <select
             value={type}
             onChange={(e) => onTypeChange(e.target.value)}
-            className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+            className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-brand-500 outline-none"
           >
             <option value="">All Types</option>
             <option value="expense">Expenses Only</option>
@@ -70,7 +70,7 @@ export const TransactionFilter: React.FC<TransactionFilterProps> = ({
           <select
             value={categoryId}
             onChange={(e) => onCategoryChange(e.target.value)}
-            className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+            className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-brand-500 outline-none"
           >
             <option value="">All Categories</option>
             {categories.map((c) => (
@@ -88,7 +88,7 @@ export const TransactionFilter: React.FC<TransactionFilterProps> = ({
             placeholder="From Date"
             value={startDate}
             onChange={(e) => onStartDateChange(e.target.value)}
-            className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+            className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-brand-500 outline-none"
           />
         </div>
 
@@ -99,7 +99,7 @@ export const TransactionFilter: React.FC<TransactionFilterProps> = ({
             placeholder="To Date"
             value={endDate}
             onChange={(e) => onEndDateChange(e.target.value)}
-            className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+            className="w-full px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-brand-500 outline-none"
           />
         </div>
 
@@ -108,7 +108,7 @@ export const TransactionFilter: React.FC<TransactionFilterProps> = ({
           <select
             value={sortBy}
             onChange={(e) => onSortByChange(e.target.value)}
-            className="flex-1 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+            className="flex-1 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-xs focus:ring-2 focus:ring-brand-500 outline-none"
           >
             <option value="date">Newest Date</option>
             <option value="amount">Amount</option>

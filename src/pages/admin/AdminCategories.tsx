@@ -96,7 +96,7 @@ export const AdminCategories: React.FC = () => {
 
         <button
           onClick={handleOpenCreate}
-          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs"
+          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs"
         >
           <Plus className="w-4 h-4" />
           <span>New System Category</span>
@@ -174,7 +174,7 @@ export const AdminCategories: React.FC = () => {
             </button>
             <button
               type="submit"
-              className="px-5 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white"
+              className="px-5 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white"
             >
               Save Category
             </button>

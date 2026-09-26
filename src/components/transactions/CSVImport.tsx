@@ -96,19 +96,19 @@ export const CSVImport: React.FC<CSVImportProps> = ({ onSuccess, currency = 'USD
   return (
     <div className="space-y-6">
       {/* Instructions & Sample Download */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/40">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 rounded-2xl bg-brand-50 dark:bg-brand-950/40 border border-brand-100 dark:border-brand-900/40">
         <div>
-          <h4 className="text-xs font-bold text-indigo-900 dark:text-indigo-200">
+          <h4 className="text-xs font-bold text-brand-900 dark:text-brand-200">
             Import Bank or Mobile Wallet CSV
           </h4>
-          <p className="text-[11px] text-indigo-700/80 dark:text-indigo-300/80 mt-0.5">
+          <p className="text-[11px] text-brand-700/80 dark:text-brand-300/80 mt-0.5">
             Columns expected: <code className="font-mono">Date</code>, <code className="font-mono">Type</code> (income/expense), <code className="font-mono">Category</code>, <code className="font-mono">Amount</code>, <code className="font-mono">Description</code>.
           </p>
         </div>
         <button
           type="button"
           onClick={handleDownloadSample}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 shadow-xs hover:bg-indigo-50/50 transition-colors shrink-0"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-brand-600 dark:text-brand-400 border border-brand-200 dark:border-brand-800 shadow-xs hover:bg-brand-50/50 transition-colors shrink-0"
         >
           <Download className="w-3.5 h-3.5" />
           <span>Download Sample CSV</span>
@@ -118,7 +118,7 @@ export const CSVImport: React.FC<CSVImportProps> = ({ onSuccess, currency = 'USD
       {/* File Upload Zone */}
       {!previewData && (
         <div className="p-6 rounded-3xl border-2 border-dashed border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-center space-y-3">
-          <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mx-auto text-indigo-600 dark:text-indigo-400">
+          <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mx-auto text-brand-600 dark:text-brand-400">
             <Upload className="w-6 h-6" />
           </div>
           <div>
@@ -148,7 +148,7 @@ export const CSVImport: React.FC<CSVImportProps> = ({ onSuccess, currency = 'USD
                 type="button"
                 onClick={handleUploadAndPreview}
                 disabled={uploading}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs transition-colors"
               >
                 {uploading && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
                 <span>Validate & Preview</span>
@@ -204,7 +204,7 @@ export const CSVImport: React.FC<CSVImportProps> = ({ onSuccess, currency = 'USD
                 type="button"
                 onClick={handleConfirmImport}
                 disabled={confirming || previewData.validCount === 0}
-                className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs disabled:opacity-50 transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs disabled:opacity-50 transition-colors"
               >
                 {confirming && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
                 <span>Confirm & Import ({previewData.validCount})</span>
@@ -247,7 +247,7 @@ export const CSVImport: React.FC<CSVImportProps> = ({ onSuccess, currency = 'USD
                         {row.matchedCategoryName}
                       </span>
                       {row.aiSuggested && (
-                        <span className="ml-1 text-[10px] text-indigo-600 dark:text-indigo-400">
+                        <span className="ml-1 text-[10px] text-brand-600 dark:text-brand-400">
                           (AI: {row.aiSuggested})
                         </span>
                       )}

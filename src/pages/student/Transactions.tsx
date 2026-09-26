@@ -181,7 +181,7 @@ export const Transactions: React.FC = () => {
           </Link>
           <Link
             to="/transactions/new"
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 transition-all"
+            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/20 transition-all"
           >
             <PlusCircle className="w-3.5 h-3.5" />
             <span>+ Add Transaction</span>

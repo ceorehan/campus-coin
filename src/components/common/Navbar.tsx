@@ -50,11 +50,11 @@ export const Navbar: React.FC = () => {
           {/* Brand Logo */}
           <div className="flex items-center gap-3">
             <Link to={isAuthenticated ? (isAdmin ? '/admin' : '/dashboard') : '/'} className="flex items-center gap-2.5 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
                 <Coins className="w-5 h-5" />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg leading-tight bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400 bg-clip-text text-transparent">
+                <span className="font-display font-bold text-lg leading-tight bg-gradient-to-r from-brand-600 to-violet-600 dark:from-brand-400 dark:to-violet-400 bg-clip-text text-transparent">
                   Campus Coin
                 </span>
                 <span className="text-[10px] uppercase tracking-wider font-semibold text-slate-400 dark:text-slate-500">
@@ -72,8 +72,8 @@ export const Navbar: React.FC = () => {
                   to="/"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400'
                   }`}
                 >
                   Home
@@ -82,8 +82,8 @@ export const Navbar: React.FC = () => {
                   to="/features"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/features')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400'
                   }`}
                 >
                   Features
@@ -92,8 +92,8 @@ export const Navbar: React.FC = () => {
                   to="/how-it-works"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/how-it-works')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400'
                   }`}
                 >
                   How It Works
@@ -102,8 +102,8 @@ export const Navbar: React.FC = () => {
                   to="/about"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/about')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400'
                   }`}
                 >
                   About
@@ -112,8 +112,8 @@ export const Navbar: React.FC = () => {
                   to="/contact"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/contact')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400'
                   }`}
                 >
                   Contact
@@ -125,8 +125,8 @@ export const Navbar: React.FC = () => {
                   to="/admin"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/admin')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   Admin Overview
@@ -135,8 +135,8 @@ export const Navbar: React.FC = () => {
                   to="/admin/users"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/admin/users')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   Users
@@ -145,8 +145,8 @@ export const Navbar: React.FC = () => {
                   to="/admin/categories"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/admin/categories')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   Categories
@@ -155,8 +155,8 @@ export const Navbar: React.FC = () => {
                   to="/admin/statistics"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/admin/statistics')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   Statistics
@@ -168,8 +168,8 @@ export const Navbar: React.FC = () => {
                   to="/dashboard"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/dashboard')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   Dashboard
@@ -178,8 +178,8 @@ export const Navbar: React.FC = () => {
                   to="/transactions"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/transactions')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   Transactions
@@ -188,8 +188,8 @@ export const Navbar: React.FC = () => {
                   to="/budgets"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/budgets')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   Budgets
@@ -198,8 +198,8 @@ export const Navbar: React.FC = () => {
                   to="/reports"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/reports')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   Reports
@@ -208,8 +208,8 @@ export const Navbar: React.FC = () => {
                   to="/insights"
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive('/insights')
-                      ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-indigo-600'
+                      ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-brand-600'
                   }`}
                 >
                   AI Insights
@@ -235,7 +235,7 @@ export const Navbar: React.FC = () => {
                 {!isAdmin && (
                   <Link
                     to="/transactions/new"
-                    className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-colors"
+                    className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-brand-600 hover:bg-brand-700 text-white shadow-sm transition-colors"
                   >
                     <PlusCircle className="w-4 h-4" />
                     <span>Add Expense</span>
@@ -269,7 +269,7 @@ export const Navbar: React.FC = () => {
                             Notifications
                           </span>
                           {unreadCount > 0 && (
-                            <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">
+                            <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-brand-100 dark:bg-brand-950 text-brand-700 dark:text-brand-300">
                               {unreadCount} new
                             </span>
                           )}
@@ -277,7 +277,7 @@ export const Navbar: React.FC = () => {
                         {unreadCount > 0 && (
                           <button
                             onClick={markAllAsRead}
-                            className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline"
+                            className="text-xs text-brand-600 dark:text-brand-400 hover:underline"
                           >
                             Mark all read
                           </button>
@@ -301,7 +301,7 @@ export const Navbar: React.FC = () => {
                                 }
                               }}
                               className={`p-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800/60 cursor-pointer transition-colors ${
-                                !n.isRead ? 'bg-indigo-50/40 dark:bg-indigo-950/20' : ''
+                                !n.isRead ? 'bg-brand-50/40 dark:bg-brand-950/20' : ''
                               }`}
                             >
                               <div className="flex items-start justify-between gap-2">
@@ -324,7 +324,7 @@ export const Navbar: React.FC = () => {
                         <Link
                           to="/notifications"
                           onClick={() => setNotifDropdownOpen(false)}
-                          className="text-xs text-indigo-600 dark:text-indigo-400 font-medium hover:underline inline-block"
+                          className="text-xs text-brand-600 dark:text-brand-400 font-medium hover:underline inline-block"
                         >
                           View all notifications
                         </Link>
@@ -342,7 +342,7 @@ export const Navbar: React.FC = () => {
                     }}
                     className="flex items-center gap-2 p-1.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
                   >
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 text-white flex items-center justify-center font-bold text-xs uppercase shadow-sm">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-500 to-purple-600 text-white flex items-center justify-center font-bold text-xs uppercase shadow-sm">
                       {user?.name?.charAt(0) || 'U'}
                     </div>
                     <span className="hidden lg:block text-xs font-semibold text-slate-700 dark:text-slate-200 max-w-[100px] truncate">
@@ -358,7 +358,7 @@ export const Navbar: React.FC = () => {
                           {user?.name}
                         </p>
                         <p className="text-[11px] text-slate-400 truncate">{user?.email}</p>
-                        <span className="inline-block mt-1 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider rounded-md bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400">
+                        <span className="inline-block mt-1 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider rounded-md bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400">
                           {user?.role}
                         </span>
                       </div>
@@ -398,7 +398,7 @@ export const Navbar: React.FC = () => {
                               onClick={() => setUserDropdownOpen(false)}
                               className="flex items-center gap-2 px-4 py-2 text-xs text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800"
                             >
-                              <ShieldCheck className="w-4 h-4 text-indigo-500" />
+                              <ShieldCheck className="w-4 h-4 text-brand-500" />
                               Admin Console
                             </Link>
                             <Link
@@ -430,13 +430,13 @@ export const Navbar: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Link
                   to="/login"
-                  className="px-3.5 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:text-indigo-600 transition-colors"
+                  className="px-3.5 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:text-brand-600 transition-colors"
                 >
                   Log In
                 </Link>
                 <Link
                   to="/register"
-                  className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-colors"
+                  className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-brand-600 hover:bg-brand-700 text-white shadow-sm transition-colors"
                 >
                   Get Started
                 </Link>
@@ -507,7 +507,7 @@ export const Navbar: React.FC = () => {
                 <Link
                   to="/register"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full text-center py-2 rounded-lg text-sm font-semibold bg-indigo-600 text-white"
+                  className="w-full text-center py-2 rounded-lg text-sm font-semibold bg-brand-600 text-white"
                 >
                   Register
                 </Link>
@@ -586,7 +586,7 @@ export const Navbar: React.FC = () => {
               <Link
                 to="/transactions/new"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block px-3 py-2 rounded-lg text-sm font-medium text-indigo-600 dark:text-indigo-400 font-semibold"
+                className="block px-3 py-2 rounded-lg text-sm font-medium text-brand-600 dark:text-brand-400 font-semibold"
               >
                 + Add Transaction
               </Link>

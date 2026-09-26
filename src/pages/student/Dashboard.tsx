@@ -50,7 +50,7 @@ export const Dashboard: React.FC = () => {
         <p className="text-xs text-rose-600">{error || 'Could not load dashboard'}</p>
         <button
           onClick={fetchDashboardData}
-          className="px-4 py-2 rounded-xl text-xs font-semibold bg-indigo-600 text-white"
+          className="px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white"
         >
           Try Again
         </button>
@@ -67,7 +67,7 @@ export const Dashboard: React.FC = () => {
             Hi, {user?.name || 'Student'} 👋
           </h1>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-            Academic Status: <strong className="text-indigo-600 dark:text-indigo-400">{user?.academicYear || 'Undergraduate'}</strong> • Here's your financial run-rate for this semester.
+            Academic Status: <strong className="text-brand-600 dark:text-brand-400">{user?.academicYear || 'Undergraduate'}</strong> • Here's your financial run-rate for this semester.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export const Dashboard: React.FC = () => {
           </Link>
           <Link
             to="/transactions/new"
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 transition-all"
+            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/20 transition-all"
           >
             <PlusCircle className="w-3.5 h-3.5" />
             <span>+ Add Expense</span>
@@ -95,9 +95,9 @@ export const Dashboard: React.FC = () => {
           {data.announcements.map((ann: any) => (
             <div
               key={ann._id}
-              className="p-4 rounded-2xl bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-950/40 dark:to-slate-900 border border-indigo-100 dark:border-indigo-900/50 flex items-start gap-3"
+              className="p-4 rounded-2xl bg-gradient-to-r from-brand-50 to-purple-50 dark:from-brand-950/40 dark:to-slate-900 border border-brand-100 dark:border-brand-900/50 flex items-start gap-3"
             >
-              <Megaphone className="w-5 h-5 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
+              <Megaphone className="w-5 h-5 text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-xs font-bold text-slate-900 dark:text-white">{ann.title}</h4>
                 <p className="text-[11px] text-slate-600 dark:text-slate-300 mt-0.5 leading-relaxed">
@@ -127,7 +127,7 @@ export const Dashboard: React.FC = () => {
             </h3>
             <Link
               to="/categories"
-              className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+              className="text-[11px] font-semibold text-brand-600 dark:text-brand-400 hover:underline"
             >
               Manage
             </Link>
@@ -148,7 +148,7 @@ export const Dashboard: React.FC = () => {
             </div>
             <Link
               to="/reports"
-              className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+              className="text-[11px] font-semibold text-brand-600 dark:text-brand-400 hover:underline"
             >
               Full Reports
             </Link>
@@ -167,7 +167,7 @@ export const Dashboard: React.FC = () => {
             </h3>
             <Link
               to="/transactions"
-              className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1"
+              className="text-[11px] font-semibold text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1"
             >
               <span>View Ledger</span>
               <ArrowRight className="w-3 h-3" />
@@ -190,7 +190,7 @@ export const Dashboard: React.FC = () => {
               </h3>
               <Link
                 to="/saving-tips"
-                className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+                className="text-[11px] font-semibold text-brand-600 dark:text-brand-400 hover:underline"
               >
                 All
               </Link>

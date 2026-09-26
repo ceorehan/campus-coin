@@ -37,7 +37,7 @@ export const ForgotPassword: React.FC = () => {
     <div className="min-h-[calc(100vh-8rem)] flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-md space-y-6">
         <div className="text-center space-y-2">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-indigo-600 to-violet-500 text-white flex items-center justify-center mx-auto shadow-md">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-violet-500 text-white flex items-center justify-center mx-auto shadow-md">
             <KeyRound className="w-6 h-6" />
           </div>
           <h2 className="text-2xl font-black text-slate-900 dark:text-white">Password Recovery</h2>
@@ -79,7 +79,7 @@ export const ForgotPassword: React.FC = () => {
                   placeholder="student@campuscoin.local"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-white text-xs outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-white text-xs outline-none focus:ring-2 focus:ring-brand-500"
                 />
               </div>
             </div>
@@ -87,7 +87,7 @@ export const ForgotPassword: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-all disabled:opacity-50"
+              className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs transition-all disabled:opacity-50"
             >
               {loading && <Loader2 className="w-4 h-4 animate-spin" />}
               <span>Generate Reset Code</span>
@@ -98,7 +98,7 @@ export const ForgotPassword: React.FC = () => {
             <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-center">
               <Link
                 to={`/reset-password?email=${encodeURIComponent(email)}&code=${resetCode}`}
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-600 dark:text-brand-400 hover:underline"
               >
                 <span>Proceed to Reset Password</span>
                 <ArrowRight className="w-3.5 h-3.5" />

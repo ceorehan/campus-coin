@@ -68,7 +68,7 @@ export const BudgetForm: React.FC<BudgetFormProps> = ({
           value={categoryId}
           disabled={!!initialData}
           onChange={(e) => setCategoryId(e.target.value)}
-          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-indigo-500 outline-none disabled:opacity-60"
+          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 outline-none disabled:opacity-60"
         >
           {categories.map((c) => (
             <option key={c._id} value={c._id}>
@@ -87,7 +87,7 @@ export const BudgetForm: React.FC<BudgetFormProps> = ({
           type="month"
           value={month}
           onChange={(e) => setMonth(e.target.value)}
-          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-indigo-500 outline-none"
+          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 outline-none"
         />
       </div>
 
@@ -108,7 +108,7 @@ export const BudgetForm: React.FC<BudgetFormProps> = ({
             placeholder="e.g. 20000"
             value={limitAmount}
             onChange={(e) => setLimitAmount(e.target.value)}
-            className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm font-semibold focus:ring-2 focus:ring-indigo-500 outline-none"
+            className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm font-semibold focus:ring-2 focus:ring-brand-500 outline-none"
           />
         </div>
       </div>
@@ -127,7 +127,7 @@ export const BudgetForm: React.FC<BudgetFormProps> = ({
         <button
           type="submit"
           disabled={loading}
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs disabled:opacity-50 transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs disabled:opacity-50 transition-colors"
         >
           {loading && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
           <span>{initialData ? 'Update Limit' : 'Set Budget'}</span>

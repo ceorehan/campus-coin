@@ -84,7 +84,7 @@ export const Profile: React.FC = () => {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
           </div>
@@ -114,7 +114,7 @@ export const Profile: React.FC = () => {
               <select
                 value={academicYear}
                 onChange={(e) => setAcademicYear(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
               >
                 <option value="Freshman">Freshman (1st Year)</option>
                 <option value="Sophomore">Sophomore (2nd Year)</option>
@@ -141,7 +141,7 @@ export const Profile: React.FC = () => {
                   required
                   value={monthlyAllowanceBaseline}
                   onChange={(e) => setMonthlyAllowanceBaseline(e.target.value)}
-                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
                 />
               </div>
               <p className="text-[10px] text-slate-400 mt-1">
@@ -164,7 +164,7 @@ export const Profile: React.FC = () => {
                   required
                   value={savingsGoal}
                   onChange={(e) => setSavingsGoal(e.target.value)}
-                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
                 />
               </div>
               <p className="text-[10px] text-slate-400 mt-1">
@@ -177,7 +177,7 @@ export const Profile: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs disabled:opacity-50 transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs disabled:opacity-50 transition-colors"
             >
               {loading && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
               <span>Save Changes</span>

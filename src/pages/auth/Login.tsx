@@ -48,7 +48,7 @@ export const Login: React.FC = () => {
       <div className="w-full max-w-md space-y-6">
         {/* Brand header */}
         <div className="text-center space-y-2">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-indigo-600 to-violet-500 text-white flex items-center justify-center mx-auto shadow-md shadow-indigo-500/20">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-violet-500 text-white flex items-center justify-center mx-auto shadow-md shadow-brand-500/20">
             <Coins className="w-6 h-6" />
           </div>
           <h2 className="text-2xl font-black text-slate-900 dark:text-white">Welcome Back</h2>
@@ -58,23 +58,23 @@ export const Login: React.FC = () => {
         </div>
 
         {/* 1-Click Quick Fill Demo Credentials */}
-        <div className="p-3.5 rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/40 space-y-2">
-          <div className="flex items-center gap-1.5 text-xs font-bold text-indigo-700 dark:text-indigo-300">
-            <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
+        <div className="p-3.5 rounded-2xl bg-brand-50/80 dark:bg-brand-950/40 border border-brand-100 dark:border-brand-900/40 space-y-2">
+          <div className="flex items-center gap-1.5 text-xs font-bold text-brand-700 dark:text-brand-300">
+            <Sparkles className="w-3.5 h-3.5 text-brand-500" />
             <span>1-Click Demo Login</span>
           </div>
           <div className="grid grid-cols-2 gap-2">
             <button
               type="button"
               onClick={handleFillDemoStudent}
-              className="py-1.5 px-3 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-indigo-200 dark:border-indigo-800 shadow-xs hover:bg-indigo-50 dark:hover:bg-indigo-900/40 transition-colors text-center"
+              className="py-1.5 px-3 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-brand-200 dark:border-brand-800 shadow-xs hover:bg-brand-50 dark:hover:bg-brand-900/40 transition-colors text-center"
             >
               Demo Student
             </button>
             <button
               type="button"
               onClick={handleFillDemoAdmin}
-              className="py-1.5 px-3 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-indigo-200 dark:border-indigo-800 shadow-xs hover:bg-indigo-50 dark:hover:bg-indigo-900/40 transition-colors text-center"
+              className="py-1.5 px-3 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-brand-200 dark:border-brand-800 shadow-xs hover:bg-brand-50 dark:hover:bg-brand-900/40 transition-colors text-center"
             >
               Demo Admin
             </button>
@@ -104,7 +104,7 @@ export const Login: React.FC = () => {
                   placeholder="student@campuscoin.local"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-white text-xs outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-white text-xs outline-none focus:ring-2 focus:ring-brand-500"
                 />
               </div>
             </div>
@@ -116,7 +116,7 @@ export const Login: React.FC = () => {
                 </label>
                 <Link
                   to="/forgot-password"
-                  className="text-[11px] text-indigo-600 dark:text-indigo-400 hover:underline"
+                  className="text-[11px] text-brand-600 dark:text-brand-400 hover:underline"
                 >
                   Forgot password?
                 </Link>
@@ -131,7 +131,7 @@ export const Login: React.FC = () => {
                   placeholder="••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-white text-xs outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-900 dark:text-white text-xs outline-none focus:ring-2 focus:ring-brand-500"
                 />
               </div>
             </div>
@@ -139,7 +139,7 @@ export const Login: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 transition-all disabled:opacity-50"
+              className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/20 transition-all disabled:opacity-50"
             >
               {loading && <Loader2 className="w-4 h-4 animate-spin" />}
               <span>Sign In</span>
@@ -149,7 +149,7 @@ export const Login: React.FC = () => {
           <div className="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 text-center">
             <p className="text-xs text-slate-500 dark:text-slate-400">
               Don't have an account yet?{' '}
-              <Link to="/register" className="font-bold text-indigo-600 dark:text-indigo-400 hover:underline">
+              <Link to="/register" className="font-bold text-brand-600 dark:text-brand-400 hover:underline">
                 Create Account
               </Link>
             </p>

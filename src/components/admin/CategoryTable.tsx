@@ -43,14 +43,14 @@ export const CategoryTable: React.FC<CategoryTableProps> = ({ categories, onEdit
                 </div>
               </td>
               <td className="px-4 py-3">
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300">
                   Global System Default
                 </span>
               </td>
               <td className="px-4 py-3 text-right space-x-1">
                 <button
                   onClick={() => onEdit(c)}
-                  className="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 transition-colors"
+                  className="p-1.5 rounded-lg text-slate-400 hover:text-brand-600 transition-colors"
                 >
                   <Edit2 className="w-3.5 h-3.5" />
                 </button>

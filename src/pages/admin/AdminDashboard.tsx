@@ -59,7 +59,7 @@ export const AdminDashboard: React.FC = () => {
         <div className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs">
           <div className="flex items-center justify-between text-slate-500">
             <span className="text-xs font-semibold uppercase">Total Students</span>
-            <Users className="w-4 h-4 text-indigo-500" />
+            <Users className="w-4 h-4 text-brand-500" />
           </div>
           <div className="mt-3">
             <span className="text-2xl font-black text-slate-900 dark:text-white">
@@ -117,47 +117,47 @@ export const AdminDashboard: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Link
           to="/admin/users"
-          className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-indigo-500 transition-all flex items-center justify-between group"
+          className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-brand-500 transition-all flex items-center justify-between group"
         >
           <div>
-            <h4 className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors">
+            <h4 className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-brand-600 transition-colors">
               User Management
             </h4>
             <p className="text-[11px] text-slate-500 mt-0.5">
               Review student accounts and enable or disable access
             </p>
           </div>
-          <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
+          <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all" />
         </Link>
 
         <Link
           to="/admin/categories"
-          className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-indigo-500 transition-all flex items-center justify-between group"
+          className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-brand-500 transition-all flex items-center justify-between group"
         >
           <div>
-            <h4 className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors">
+            <h4 className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-brand-600 transition-colors">
               Default Categories
             </h4>
             <p className="text-[11px] text-slate-500 mt-0.5">
               Maintain university taxonomies and color keys
             </p>
           </div>
-          <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
+          <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all" />
         </Link>
 
         <Link
           to="/admin/announcements"
-          className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-indigo-500 transition-all flex items-center justify-between group"
+          className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-brand-500 transition-all flex items-center justify-between group"
         >
           <div>
-            <h4 className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors">
+            <h4 className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-brand-600 transition-colors">
               Campus Announcements
             </h4>
             <p className="text-[11px] text-slate-500 mt-0.5">
               Broadcast financial notices to student dashboards
             </p>
           </div>
-          <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
+          <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all" />
         </Link>
       </div>
 

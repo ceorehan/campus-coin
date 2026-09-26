@@ -38,7 +38,7 @@ export const Contact: React.FC = () => {
                 setEmail('');
                 setMessage('');
               }}
-              className="text-xs font-semibold text-indigo-600 hover:underline pt-2 inline-block"
+              className="text-xs font-semibold text-brand-600 hover:underline pt-2 inline-block"
             >
               Send another note
             </button>
@@ -55,7 +55,7 @@ export const Contact: React.FC = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Muhammad"
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
 
@@ -69,7 +69,7 @@ export const Contact: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="student@university.edu"
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
 
@@ -83,13 +83,13 @@ export const Contact: React.FC = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="How can we help your student budget?"
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-colors"
+              className="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs transition-colors"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Send Message</span>

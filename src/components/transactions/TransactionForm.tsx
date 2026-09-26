@@ -166,7 +166,7 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({
             placeholder="0.00"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm font-semibold focus:ring-2 focus:ring-indigo-500 outline-none"
+            className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm font-semibold focus:ring-2 focus:ring-brand-500 outline-none"
           />
         </div>
       </div>
@@ -181,7 +181,7 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({
             type="button"
             onClick={handleAISuggest}
             disabled={suggesting || !description.trim()}
-            className="inline-flex items-center gap-1 text-[11px] font-bold text-indigo-600 dark:text-indigo-400 hover:underline disabled:opacity-50"
+            className="inline-flex items-center gap-1 text-[11px] font-bold text-brand-600 dark:text-brand-400 hover:underline disabled:opacity-50"
             title="Auto-detect category from description"
           >
             {suggesting ? (
@@ -198,13 +198,13 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({
           placeholder="e.g. Subway sandwich, Monthly bus card, Physics textbook"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-indigo-500 outline-none"
+          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 outline-none"
         />
 
         {aiSuggestion && (
-          <div className="mt-1.5 p-2 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/40 flex items-center justify-between text-[11px] text-indigo-700 dark:text-indigo-300">
+          <div className="mt-1.5 p-2 rounded-xl bg-brand-50 dark:bg-brand-950/40 border border-brand-100 dark:border-brand-900/40 flex items-center justify-between text-[11px] text-brand-700 dark:text-brand-300">
             <span>
-              ✨ AI Suggested Category: <strong>{aiSuggestion.category}</strong>
+              AI Suggested Category: <strong>{aiSuggestion.category}</strong>
             </span>
             <span className="text-[10px] font-semibold opacity-75">
               Confidence: {Math.round(aiSuggestion.confidence * 100)}%
@@ -222,7 +222,7 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({
           <select
             value={categoryId}
             onChange={(e) => setCategoryId(e.target.value)}
-            className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-indigo-500 outline-none appearance-none"
+            className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 outline-none appearance-none"
           >
             {categories.map((c) => (
               <option key={c._id} value={c._id}>
@@ -244,7 +244,7 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({
             required
             value={date}
             onChange={(e) => setDate(e.target.value)}
-            className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-indigo-500 outline-none"
+            className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 outline-none"
           />
         </div>
       </div>
@@ -256,7 +256,7 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({
             type="checkbox"
             checked={isRecurring}
             onChange={(e) => setIsRecurring(e.target.checked)}
-            className="w-4 h-4 rounded-md text-indigo-600 focus:ring-indigo-500 border-slate-300 dark:border-slate-700"
+            className="w-4 h-4 rounded-md text-brand-600 focus:ring-brand-500 border-slate-300 dark:border-slate-700"
           />
           <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
             Mark as Recurring Transaction
@@ -293,7 +293,7 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({
         <button
           type="submit"
           disabled={loading}
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 transition-all disabled:opacity-50"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/20 transition-all disabled:opacity-50"
         >
           {loading && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
           <span>{initialData ? 'Update Transaction' : 'Save Transaction'}</span>

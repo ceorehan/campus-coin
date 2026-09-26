@@ -43,7 +43,7 @@ export const StudentLayout: React.FC = () => {
           to="/dashboard"
           className={({ isActive }) =>
             `flex flex-col items-center gap-0.5 text-[10px] font-semibold ${
-              isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500'
+              isActive ? 'text-brand-600 dark:text-brand-400' : 'text-slate-500'
             }`
           }
         >
@@ -55,7 +55,7 @@ export const StudentLayout: React.FC = () => {
           to="/transactions"
           className={({ isActive }) =>
             `flex flex-col items-center gap-0.5 text-[10px] font-semibold ${
-              isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500'
+              isActive ? 'text-brand-600 dark:text-brand-400' : 'text-slate-500'
             }`
           }
         >
@@ -67,10 +67,10 @@ export const StudentLayout: React.FC = () => {
           to="/transactions/new"
           className="flex flex-col items-center -mt-5"
         >
-          <div className="w-11 h-11 rounded-full bg-indigo-600 text-white flex items-center justify-center shadow-lg shadow-indigo-600/30">
+          <div className="w-11 h-11 rounded-full bg-brand-600 text-white flex items-center justify-center shadow-lg shadow-brand-600/30">
             <PlusCircle className="w-5 h-5" />
           </div>
-          <span className="text-[10px] font-semibold text-indigo-600 dark:text-indigo-400 mt-0.5">
+          <span className="text-[10px] font-semibold text-brand-600 dark:text-brand-400 mt-0.5">
             Add
           </span>
         </NavLink>
@@ -79,7 +79,7 @@ export const StudentLayout: React.FC = () => {
           to="/budgets"
           className={({ isActive }) =>
             `flex flex-col items-center gap-0.5 text-[10px] font-semibold ${
-              isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500'
+              isActive ? 'text-brand-600 dark:text-brand-400' : 'text-slate-500'
             }`
           }
         >
@@ -91,7 +91,7 @@ export const StudentLayout: React.FC = () => {
           to="/notifications"
           className={({ isActive }) =>
             `flex flex-col items-center gap-0.5 text-[10px] font-semibold relative ${
-              isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500'
+              isActive ? 'text-brand-600 dark:text-brand-400' : 'text-slate-500'
             }`
           }
         >

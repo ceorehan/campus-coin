@@ -70,7 +70,7 @@ export const RecentTransactions: React.FC<RecentTransactionsProps> = ({
       <div className="pt-2 text-center">
         <Link
           to="/transactions"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 dark:text-brand-400 hover:underline"
         >
           <span>View all transactions</span>
           <ArrowRight className="w-3.5 h-3.5" />

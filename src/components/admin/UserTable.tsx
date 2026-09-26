@@ -39,7 +39,7 @@ export const UserTable: React.FC<UserTableProps> = ({ users, onToggleStatus }) =
                   className={`px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider ${
                     u.role === 'admin'
                       ? 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300'
-                      : 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300'
+                      : 'bg-brand-50 text-brand-700 dark:bg-brand-950 dark:text-brand-300'
                   }`}
                 >
                   {u.role}

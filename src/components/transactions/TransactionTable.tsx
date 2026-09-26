@@ -67,7 +67,7 @@ export const TransactionTable: React.FC<TransactionTableProps> = ({
                     {t.description}
                   </div>
                   {t.isRecurring && (
-                    <span className="inline-flex items-center gap-1 mt-0.5 text-[10px] font-semibold text-indigo-600 dark:text-indigo-400">
+                    <span className="inline-flex items-center gap-1 mt-0.5 text-[10px] font-semibold text-brand-600 dark:text-brand-400">
                       <Repeat className="w-2.5 h-2.5" />
                       <span>Recurring ({t.recurringFrequency})</span>
                     </span>
@@ -110,7 +110,7 @@ export const TransactionTable: React.FC<TransactionTableProps> = ({
                 <td className="px-4 py-3 whitespace-nowrap text-right space-x-1">
                   <button
                     onClick={() => onEdit(t)}
-                    className="p-1.5 rounded-lg text-slate-500 hover:text-indigo-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    className="p-1.5 rounded-lg text-slate-500 hover:text-brand-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
                     title="Edit transaction"
                   >
                     <Edit2 className="w-3.5 h-3.5" />

@@ -67,7 +67,7 @@ export const Bookmarks: React.FC = () => {
             >
               <div>
                 <div className="flex items-start justify-between gap-2 mb-2">
-                  <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300">
+                  <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-brand-50 dark:bg-brand-950/60 text-brand-700 dark:text-brand-300">
                     {b.itemType}
                   </span>
                   <button

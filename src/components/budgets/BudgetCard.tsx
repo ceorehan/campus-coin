@@ -97,7 +97,7 @@ export const BudgetCard: React.FC<BudgetCardProps> = ({
         <div className="flex items-center gap-1">
           <button
             onClick={() => onEdit(budget)}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            className="p-1.5 rounded-lg text-slate-400 hover:text-brand-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             title="Edit limit"
           >
             <Edit2 className="w-3.5 h-3.5" />

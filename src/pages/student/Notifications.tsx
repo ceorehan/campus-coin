@@ -67,7 +67,7 @@ export const NotificationsPage: React.FC = () => {
               ? 'text-rose-600 bg-rose-50 dark:bg-rose-950/60'
               : isWarning
               ? 'text-amber-600 bg-amber-50 dark:bg-amber-950/60'
-              : 'text-indigo-600 bg-indigo-50 dark:bg-indigo-950/60';
+              : 'text-brand-600 bg-brand-50 dark:bg-brand-950/60';
 
             return (
               <div
@@ -76,7 +76,7 @@ export const NotificationsPage: React.FC = () => {
                 className={`p-4 rounded-3xl border transition-all cursor-pointer flex items-start justify-between gap-4 ${
                   n.isRead
                     ? 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 opacity-75'
-                    : 'bg-indigo-50/40 dark:bg-indigo-950/20 border-indigo-200 dark:border-indigo-900/60 shadow-xs'
+                    : 'bg-brand-50/40 dark:bg-brand-950/20 border-brand-200 dark:border-brand-900/60 shadow-xs'
                 }`}
               >
                 <div className="flex items-start gap-3">
@@ -87,7 +87,7 @@ export const NotificationsPage: React.FC = () => {
                     <div className="flex items-center gap-2">
                       <h4 className="text-xs font-bold text-slate-900 dark:text-white">{n.title}</h4>
                       {!n.isRead && (
-                        <span className="w-2 h-2 rounded-full bg-indigo-600 dark:bg-indigo-400 shrink-0" />
+                        <span className="w-2 h-2 rounded-full bg-brand-600 dark:bg-brand-400 shrink-0" />
                       )}
                     </div>
                     <p className="text-xs text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">

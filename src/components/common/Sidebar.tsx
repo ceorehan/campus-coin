@@ -49,9 +49,9 @@ export const Sidebar: React.FC = () => {
               className={({ isActive }) =>
                 `flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold transition-all ${
                   isActive
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-500/20'
+                    ? 'bg-brand-600 text-white shadow-md shadow-brand-500/20'
                     : link.highlight
-                    ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/50'
+                    ? 'text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/40 hover:bg-brand-100 dark:hover:bg-brand-900/50'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'
                 }`
               }
@@ -72,8 +72,8 @@ export const Sidebar: React.FC = () => {
 
       {/* Helpful student tip banner at sidebar bottom */}
       <div className="mt-auto pt-6">
-        <div className="p-3.5 rounded-2xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/40 dark:to-slate-800/40 border border-indigo-100 dark:border-indigo-900/40 text-left">
-          <div className="flex items-center gap-1.5 text-indigo-600 dark:text-indigo-400 text-xs font-bold mb-1">
+        <div className="p-3.5 rounded-2xl bg-gradient-to-br from-brand-50 to-purple-50 dark:from-brand-950/40 dark:to-slate-800/40 border border-brand-100 dark:border-brand-900/40 text-left">
+          <div className="flex items-center gap-1.5 text-brand-600 dark:text-brand-400 text-xs font-bold mb-1">
             <Lightbulb className="w-3.5 h-3.5" />
             <span>Campus Tip</span>
           </div>

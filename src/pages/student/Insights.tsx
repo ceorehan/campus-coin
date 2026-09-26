@@ -64,7 +64,7 @@ export const Insights: React.FC = () => {
         <div>
           <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
             <span>AI Spending Insights</span>
-            <Sparkles className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+            <Sparkles className="w-5 h-5 text-brand-600 dark:text-brand-400" />
           </h1>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
             Gemini-powered financial evaluations specifically calibrated for student life
@@ -74,7 +74,7 @@ export const Insights: React.FC = () => {
         <button
           onClick={handleGenerate}
           disabled={generating}
-          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 disabled:opacity-50 transition-all"
+          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-md shadow-brand-500/20 disabled:opacity-50 transition-all"
         >
           {generating ? (
             <Loader2 className="w-3.5 h-3.5 animate-spin" />
@@ -89,7 +89,7 @@ export const Insights: React.FC = () => {
         <Loader message="Synthesizing intelligence digests..." />
       ) : insights.length === 0 ? (
         <div className="p-12 text-center bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 space-y-3">
-          <Sparkles className="w-10 h-10 text-indigo-500 mx-auto" />
+          <Sparkles className="w-10 h-10 text-brand-500 mx-auto" />
           <h3 className="text-sm font-bold text-slate-900 dark:text-white">
             No Insights Generated Yet
           </h3>
@@ -106,7 +106,7 @@ export const Insights: React.FC = () => {
             >
               <div className="flex items-start justify-between">
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 block mb-1">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400 block mb-1">
                     Month: {item.month} • Evaluated {formatDate(item.createdAt, 'short')}
                   </span>
                   <h3 className="text-base font-bold text-slate-900 dark:text-white">
@@ -116,7 +116,7 @@ export const Insights: React.FC = () => {
 
                 <button
                   onClick={() => handleBookmark(item._id, item)}
-                  className="p-2 rounded-xl text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 dark:hover:bg-slate-800 transition-colors"
+                  className="p-2 rounded-xl text-slate-400 hover:text-brand-600 hover:bg-brand-50 dark:hover:bg-slate-800 transition-colors"
                   title="Bookmark this insight"
                 >
                   <Bookmark className="w-4 h-4" />

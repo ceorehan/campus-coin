@@ -84,7 +84,7 @@ export const Reports: React.FC = () => {
 
           <button
             onClick={handleExportCSV}
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-colors"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs transition-colors"
           >
             <Download className="w-3.5 h-3.5" />
             <span>Export CSV</span>
@@ -153,7 +153,7 @@ export const Reports: React.FC = () => {
                   <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
                     Savings Rate
                   </span>
-                  <span className="text-2xl font-black text-indigo-600">
+                  <span className="text-2xl font-black text-brand-600">
                     {monthlyData.savingsRate}%
                   </span>
                 </div>
@@ -167,7 +167,7 @@ export const Reports: React.FC = () => {
                   </h4>
                   <p className="text-xs text-slate-500 mt-0.5">
                     Your highest expense category for {selectedMonth} was{' '}
-                    <strong className="text-indigo-600 dark:text-indigo-400">
+                    <strong className="text-brand-600 dark:text-brand-400">
                       {monthlyData.topCategory || 'N/A'}
                     </strong>
                     .

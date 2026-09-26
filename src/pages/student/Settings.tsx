@@ -82,7 +82,7 @@ export const Settings: React.FC = () => {
             onClick={toggleTheme}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 transition-colors"
           >
-            {theme === 'dark' ? <Moon className="w-4 h-4 text-indigo-400" /> : <Sun className="w-4 h-4 text-amber-500" />}
+            {theme === 'dark' ? <Moon className="w-4 h-4 text-brand-400" /> : <Sun className="w-4 h-4 text-amber-500" />}
             <span className="capitalize">{theme} Mode</span>
           </button>
         </div>
@@ -102,7 +102,7 @@ export const Settings: React.FC = () => {
               onClick={() => setFontSize('normal')}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                 fontSize === 'normal'
-                  ? 'bg-white dark:bg-slate-900 text-indigo-600 shadow-xs'
+                  ? 'bg-white dark:bg-slate-900 text-brand-600 shadow-xs'
                   : 'text-slate-500 hover:text-slate-800'
               }`}
             >
@@ -112,7 +112,7 @@ export const Settings: React.FC = () => {
               onClick={() => setFontSize('large')}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                 fontSize === 'large'
-                  ? 'bg-white dark:bg-slate-900 text-indigo-600 shadow-xs'
+                  ? 'bg-white dark:bg-slate-900 text-brand-600 shadow-xs'
                   : 'text-slate-500 hover:text-slate-800'
               }`}
             >
@@ -148,7 +148,7 @@ export const Settings: React.FC = () => {
       {/* Security & Password Card */}
       <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs space-y-4">
         <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
-          <Lock className="w-4 h-4 text-indigo-500" />
+          <Lock className="w-4 h-4 text-brand-500" />
           <span>Change Password</span>
         </h3>
 
@@ -175,7 +175,7 @@ export const Settings: React.FC = () => {
               required
               value={currentPassword}
               onChange={(e) => setCurrentPassword(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
 
@@ -189,7 +189,7 @@ export const Settings: React.FC = () => {
                 required
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
@@ -201,7 +201,7 @@ export const Settings: React.FC = () => {
                 required
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-xs text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
           </div>
@@ -210,7 +210,7 @@ export const Settings: React.FC = () => {
             <button
               type="submit"
               disabled={pwdLoading}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs disabled:opacity-50 transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-700 text-white shadow-xs disabled:opacity-50 transition-colors"
             >
               {pwdLoading && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
               <span>Update Password</span>

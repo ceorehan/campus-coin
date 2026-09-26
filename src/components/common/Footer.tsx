@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           {/* Brand & Purpose */}
           <div className="space-y-4 md:col-span-1">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-sm">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-600 to-violet-500 flex items-center justify-center text-white shadow-sm">
                 <Coins className="w-4 h-4" />
               </div>
               <span className="font-bold text-lg text-slate-900 dark:text-white">Campus Coin</span>
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
               Smart spending student style. Designed specifically for university students to track allowances, hostel costs, meal plans, and academic goals.
             </p>
             <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-              <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
+              <Sparkles className="w-3.5 h-3.5 text-brand-500" />
               <span>Built for college budgeting</span>
             </div>
           </div>
@@ -31,27 +31,27 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link to="/" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/features" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/features" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   Features
                 </Link>
               </li>
               <li>
-                <Link to="/how-it-works" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/how-it-works" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   How It Works
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/about" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   About Campus Coin
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/contact" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   Support & Contact
                 </Link>
               </li>
@@ -65,27 +65,27 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link to="/dashboard" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/dashboard" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   Student Dashboard
                 </Link>
               </li>
               <li>
-                <Link to="/transactions" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/transactions" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   Expense Tracker
                 </Link>
               </li>
               <li>
-                <Link to="/budgets" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/budgets" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   Monthly Budgets
                 </Link>
               </li>
               <li>
-                <Link to="/reports" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors">
+                <Link to="/reports" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors">
                   Financial Reports
                 </Link>
               </li>
               <li>
-                <Link to="/sitemap" className="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline flex items-center gap-1">
+                <Link to="/sitemap" className="text-brand-600 dark:text-brand-400 font-semibold hover:underline flex items-center gap-1">
                   <span>Complete Sitemap</span>
                   <BookOpen className="w-3 h-3" />
                 </Link>
@@ -100,8 +100,8 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link to="/admin/login" className="text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition-colors flex items-center gap-1">
-                  <Shield className="w-3.5 h-3.5 text-indigo-500" />
+                <Link to="/admin/login" className="text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors flex items-center gap-1">
+                  <Shield className="w-3.5 h-3.5 text-brand-500" />
                   <span>Admin Portal</span>
                 </Link>
               </li>
